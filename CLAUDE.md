@@ -6,11 +6,33 @@ Python-Workspace für verschiedene Projekte, Automatisierungen und Web-Applikati
 ## Projektstruktur
 ```
 PythonW/
-├── .venv/           # Virtual Environment (Python 3.12)
-├── .gitignore       # Git-Ignore-Regeln
-├── CLAUDE.md        # Projekt-Anweisungen (dieses File)
-└── REPORT.md        # Aufgaben-Reports
+├── .claude/
+│   ├── settings.json        # Projekt-Permissions
+│   ├── settings.local.json  # Lokale Permissions
+│   └── skills/
+│       ├── frontend-design/ # Skill: Frontend-Design (Anthropic)
+│       ├── ui-ux-pro-max/   # Skill: UI/UX Design Intelligence
+│       ├── ui-styling/      # Skill: shadcn/ui + Tailwind Styling
+│       ├── design/          # Skill: Logo, CIP, Icons, Slides
+│       ├── design-system/   # Skill: Design Tokens & Components
+│       ├── brand/           # Skill: Brand Identity & Guidelines
+│       ├── banner-design/   # Skill: Banner-Design
+│       └── slides/          # Skill: HTML-Präsentationen
+├── .venv/                   # Virtual Environment (Python 3.12)
+├── .gitignore               # Git-Ignore-Regeln
+├── CLAUDE.md                # Projekt-Anweisungen (dieses File)
+└── REPORT.md                # Aufgaben-Reports
 ```
+
+## Installierte Skills
+- **frontend-design**: Erstellt produktionsreife, visuell anspruchsvolle Frontend-Interfaces (HTML/CSS/JS, React, Vue). Vermeidet generische AI-Ästhetik.
+- **ui-ux-pro-max**: Design-Intelligenz für Web & Mobile. 67 UI-Styles, 161 Farbpaletten, 57 Font-Pairings, 161 Reasoning-Rules. Unterstützt React, Next.js, Vue, Svelte, SwiftUI, Flutter u.a.
+- **ui-styling**: shadcn/ui-Komponenten (Radix UI + Tailwind), Canvas-Designs mit Fonts, Theming & Dark Mode.
+- **design**: Logo-Generierung (55 Styles), Corporate Identity Program (50 Deliverables), Icon-Design, Slides, Banner, Social Photos.
+- **design-system**: Design-Token-Architektur (primitive→semantic→component), CSS-Variablen, Spacing/Typography-Scales.
+- **brand**: Brand Voice, Visual Identity, Messaging Frameworks, Asset-Management, Style Guides.
+- **banner-design**: Banner für Social Media, Ads, Website Heroes, Print. Multiple Art-Direction-Optionen.
+- **slides**: Strategische HTML-Präsentationen mit Chart.js, Design Tokens, Copywriting-Formeln.
 
 ## Setup
 - Python 3.12.6
@@ -31,6 +53,21 @@ PythonW/
 - Commit-Messages: konventionell (feat:, fix:, chore:, docs:, refactor:, test:)
 - Vor jedem Commit: `ruff check` und `pytest`
 - PRs für alle Änderungen an `main`
+
+## Websiteerstellung
+
+### Tech Stack
+- Next.js 15 + TypeScript + Tailwind CSS
+- Framer Motion für Animationen
+
+### Design-Regeln
+- Nutze das AskUserQuestion Tool, um den Nutzer über das Websitedesign zu interviewen, damit du die Vorstellungen des Nutzers genau abbilden kannst
+- Nutze den **frontend-design** Skill für alle UI-Entscheidungen
+- Nutze **UI/UX Pro Max** für Design-System-Generierung
+- Nutze ggf. 21st.dev für Component-Inspiration (falls vorgegeben)
+- Keine generischen AI-Aesthetics
+- Bold, distinctive Design-Choices
+- Performance-optimiert (Core Web Vitals)
 
 ## Learnings
 <!-- Hier werden Erkenntnisse aus der Arbeit am Projekt dokumentiert -->
