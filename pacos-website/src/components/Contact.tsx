@@ -226,9 +226,17 @@ export default function Contact() {
                 </div>
               </div>
 
+              <p className="mt-4 text-xs text-slate-400">
+                Hinweis: Die Datenübertragung per E-Mail erfolgt unverschlüsselt.
+                Details finden Sie in unserer{" "}
+                <a href="/datenschutz" className="text-primary-600 underline hover:text-primary-800">
+                  Datenschutzerklärung
+                </a>.
+              </p>
+
               <button
                 type="submit"
-                className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-primary-800 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-900 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:outline-none sm:w-auto"
+                className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-primary-800 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-900 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:outline-none sm:w-auto"
               >
                 Nachricht senden
                 <svg
@@ -401,26 +409,6 @@ export default function Contact() {
           </motion.div>
         </div>
 
-        {/* Google Maps */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-12 overflow-hidden rounded-2xl border border-slate-200 shadow-sm"
-        >
-          <iframe
-            title="PaCos GmbH Standort"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.2!2d11.9997!3d51.4775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a662f3b0a7c5e7%3A0x4c3e3a93d7f8d8e0!2sReideburger%20Str.%2027%2C%2006112%20Halle%20(Saale)!5e0!3m2!1sde!2sde!4v1710000000000"
-            width="100%"
-            height="320"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            className="w-full"
-          />
-        </motion.div>
       </div>
     </section>
   );
