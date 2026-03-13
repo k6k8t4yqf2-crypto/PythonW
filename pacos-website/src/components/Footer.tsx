@@ -88,6 +88,12 @@ export default function Footer() {
             >
               Datenschutz
             </a>
+            <a
+              href="/agb"
+              className="transition-colors hover:text-slate-600"
+            >
+              AGB
+            </a>
           </div>
         </div>
       </div>
