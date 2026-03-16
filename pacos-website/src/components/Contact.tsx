@@ -88,7 +88,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, name: e.target.value })
                     }
-                    className="mt-2 block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+                    className="mt-1.5 block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
                     placeholder="Ihr Name"
                   />
                 </div>
@@ -107,7 +107,7 @@ export default function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, email: e.target.value })
                     }
-                    className="mt-2 block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+                    className="mt-1.5 block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
                     placeholder="ihre@email.de"
                   />
                 </div>
@@ -128,7 +128,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setFormData({ ...formData, subject: e.target.value })
                   }
-                  className="mt-2 block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+                  className="mt-1.5 block w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
                   placeholder="Anfrage Lohnherstellung"
                 />
               </div>
@@ -148,7 +148,7 @@ export default function Contact() {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="mt-2 block w-full resize-none rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
+                  className="mt-1.5 block w-full resize-none rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-900 transition-colors placeholder:text-slate-400 focus:border-primary-500 focus:bg-white focus:ring-2 focus:ring-primary-500/20 focus:outline-none"
                   placeholder="Beschreiben Sie Ihr Projekt oder Ihre Anfrage..."
                 />
               </div>
@@ -236,7 +236,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-primary-800 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-900 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:outline-none sm:w-auto"
+                className="mt-4 inline-flex w-full items-center justify-center rounded-lg bg-primary-900 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-primary-950 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:outline-none sm:w-auto"
               >
                 Nachricht senden
                 <svg

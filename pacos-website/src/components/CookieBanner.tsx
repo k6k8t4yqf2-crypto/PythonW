@@ -10,9 +10,12 @@ export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (!localStorage.getItem(STORAGE_KEY)) {
-      setVisible(true);
-    }
+    const id = requestAnimationFrame(() => {
+      if (!localStorage.getItem(STORAGE_KEY)) {
+        setVisible(true);
+      }
+    });
+    return () => cancelAnimationFrame(id);
   }, []);
 
   function accept() {

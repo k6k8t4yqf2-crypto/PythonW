@@ -104,7 +104,7 @@ export default function Services() {
   return (
     <section id="leistungen" className="relative bg-white py-24 lg:py-32 overflow-hidden">
 
-      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -113,10 +113,13 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl">
+          <span className="text-sm font-semibold uppercase tracking-widest text-primary-600">
+            Leistungen
+          </span>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
             Full Manufacturing Service
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-slate-500">
+          <p className="mx-auto mt-4 max-w-2xl text-lg leading-relaxed text-slate-500">
             Von der ersten Idee bis zum versandfertigen Produkt –
             <br />
             wir decken die gesamte Wertschöpfungskette ab.

@@ -106,7 +106,7 @@ export default function Facts() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-primary-900 py-24 lg:py-28"
+      className="relative overflow-hidden bg-primary-900 py-24 lg:py-32"
     >
       {/* Subtle pattern */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary-950 via-primary-900 to-primary-950" />
