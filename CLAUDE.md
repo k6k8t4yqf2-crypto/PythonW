@@ -69,5 +69,51 @@ PythonW/
 - Bold, distinctive Design-Choices
 - Performance-optimiert (Core Web Vitals)
 
+## PaCos GmbH Website (pacos-website/)
+
+### Tech Stack
+- Next.js 15.5.12 (App Router, Webpack, Standalone Build)
+- React + TypeScript + "use client" Direktive
+- Tailwind CSS mit custom `primary-*` Farbpalette
+- Framer Motion Animationen
+- Lucide React Icons
+- Embla Carousel (shadcn/ui Carousel Komponente)
+- Statische Generierung (alle Routen prerendered)
+
+### Seitenstruktur (src/app/page.tsx)
+1. Navigation - Logo links, "Made in Germany" zentriert, Nav-Links rechts
+2. Hero - WarpShader Background
+3. Services - "Full Manufacturing Service" (3 Karten: Entwicklung, Herstellung, Abfuellung)
+4. Facts
+5. About - Interaktive Timeline (7 Events: 1902-Heute)
+6. Products - InteractiveSelector (10 Kategorien, 2 Seiten) + 6 Darreichungsformen
+7. Quality (nicht bearbeitet)
+8. Karriere - Gallery, JobCards, Benefits, Bewerbungsformular
+9. Contact - mailto-Link (Phase 1), kein Google Maps (DSGVO)
+10. Footer
+
+### Routen
+- `/` - Hauptseite mit allen Sections
+- `/datenschutz` - Datenschutzerklaerung (DSGVO-konform)
+- `/impressum` - Impressum (DDG, MStV)
+- `/agb` - AGB-Seite
+- `error.tsx`, `not-found.tsx`, `sitemap.ts`
+
+### Komponenten
+- Navigation, Hero, Services, Facts, About, Products, Quality, Karriere, Contact, Footer
+- CookieBanner - Cookie-Hinweis-Banner
+- ui/interactive-selector.tsx - Accordion-Style Produktkategorie-Selector
+- ui/carousel.tsx - shadcn/ui Carousel Wrapper
+
+### Deployment
+- Ziel: Hostinger VPS, Ubuntu, Node 20, PM2, nginx, Certbot
+- Configs: deployment/ (nginx.conf, deploy.sh, setup.md, ecosystem.config.js)
+- Standalone Build (next.config.ts: output "standalone")
+- Hosting-Anbieter: Hostinger (UAB Hostinger, Litauen)
+
+### Bekannte Probleme
+- .next Cache-Korruption -> `rm -rf .next` und neu bauen
+- Port 3000 kann belegt sein -> Dev-Server weicht auf 3001 aus
+
 ## Learnings
 <!-- Hier werden Erkenntnisse aus der Arbeit am Projekt dokumentiert -->
